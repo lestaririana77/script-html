@@ -7,17 +7,67 @@
     <title>Belajar Membuat Table di HTML</title>
 </head>
 <body>
+    <h1>MARI MEMBUAT TABEL</h1>
+    <!-- simple table -->
     <div>
-        <table>
+        <table border="1" cellspacing="0" cellpadding="10">
             <tr>
-                <td>Nama</td>
-                <td>Kelas</td>
+                <td><strong>Nama</strong></td>
+                <td><strong>Level</strong></td>
             </tr>
             <tr>
                 <td>Riana</td>
                 <td>Beginner</td>
             </tr>
         </table>
+    </div>
+    <br><br><br><br><br>
+    <!-- Complex Table -->
+    <div>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nama</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Adek</td>
+                    <td>Pro</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Riana</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br><br><br>
+
+    <!-- colspan, rowspan -->
+    <div>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td rowspan="3">rowspan 3</td>
+                <td colspan="2">colspan 2</td>
+            </tr>
+            <tr>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div>
+        <p>Ini <a href="05a-latihan_table.html" target="_blank">Latihan</a></p>
     </div>
 </body>
 </html>
